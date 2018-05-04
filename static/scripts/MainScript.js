@@ -1,5 +1,7 @@
 "use strict";
 
+import "./../mainStyle.scss";
+
 import PrintScript from "./PrintScript";
 
 class MainScript {
