@@ -1,0 +1,6 @@
+npm install css-loader --save
+npm install --save-dev extract-text-webpack-plugin
+npm install sass-loader --save
+npm install style-loader --save
+npm install node-sass --save
+npm install url-loader --save
