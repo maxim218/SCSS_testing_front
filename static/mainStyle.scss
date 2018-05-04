@@ -14,6 +14,14 @@ body {
     color: white;
     font-size: 40px;
   }
+
+  @media only screen and (max-device-width: 400px) {
+    background: #00FF00;
+
+    p {
+      color: black;
+    }
+  }
 }
 
 #box_2 {
@@ -24,6 +32,14 @@ body {
     color: blue;
     font-size: 30px;
   }
+
+  @media only screen and (max-device-width: 400px) {
+    background: #00FF00;
+
+    p {
+      color: black;
+    }
+  }
 }
 
 #box_3 {
@@ -33,5 +49,13 @@ body {
   p {
     color: red;
     font-size: 20px;
+  }
+
+  @media only screen and (max-device-width: 400px) {
+    background: #00FF00;
+
+    p {
+      color: black;
+    }
   }
 }
