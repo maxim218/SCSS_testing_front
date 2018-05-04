@@ -1,5 +1,6 @@
 $my-body-background-color: #0000FF;
 $my-padding-pixels-value: 25px;
+$my-margin-pixels-value: 17px;
 
 body {
   background: $my-body-background-color;
@@ -8,17 +9,29 @@ body {
 #box_1 {
   padding: $my-padding-pixels-value;
   background: burlywood;
-  margin-bottom: 25px;
+  margin-bottom: $my-margin-pixels-value;
+  p {
+    color: white;
+    font-size: 40px;
+  }
 }
 
 #box_2 {
   padding: $my-padding-pixels-value;
   background: burlywood;
-  margin-bottom: 25px;
+  margin-bottom: $my-margin-pixels-value;
+  p {
+    color: blue;
+    font-size: 30px;
+  }
 }
 
 #box_3 {
   padding: $my-padding-pixels-value;
   background: burlywood;
-  margin-bottom: 25px;
+  margin-bottom: $my-margin-pixels-value;
+  p {
+    color: red;
+    font-size: 20px;
+  }
 }
