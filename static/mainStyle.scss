@@ -1,21 +1,24 @@
+$my-body-background-color: #0000FF;
+$my-padding-pixels-value: 25px;
+
 body {
-  background: #CCCCCC;
+  background: $my-body-background-color;
 }
 
 #box_1 {
-  padding: 15px;
+  padding: $my-padding-pixels-value;
   background: burlywood;
   margin-bottom: 25px;
 }
 
 #box_2 {
-  padding: 15px;
+  padding: $my-padding-pixels-value;
   background: burlywood;
   margin-bottom: 25px;
 }
 
 #box_3 {
-  padding: 15px;
+  padding: $my-padding-pixels-value;
   background: burlywood;
   margin-bottom: 25px;
 }
