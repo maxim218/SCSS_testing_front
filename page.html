@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Страница</title>
+    <style>
+        svg {
+            position: absolute;
+            left: 200px;
+            top: 600px;
+            background: white;
+            width: 500px;
+            height: 300px;
+        }
+
+        body {
+            background: #7FFFD4;
+            color: #00008B;
+            padding: 30px;
+            font-family: Geneva, Arial, Helvetica, sans-serif;
+        }
+
+        .my-first-class {
+            display: inline-block;
+            border: 4px solid gray;
+            padding: 10px;
+            user-select: none;
+            cursor: pointer;
+        }
+
+        .my-first-class-animation {
+            background: #0e0e98;
+            color: white;
+
+            transition-property: background, color;
+            transition-duration: 0.7s;
+            transition-timing-function: ease;
+        }
+
+        .my-first-class-animation:hover {
+            background: #17a8d9;
+            color: black;
+        }
+
+        .my-second-class {
+            position: absolute;
+            width: 200px;
+            height: 100px;
+
+            background: red;
+            left: 100px;
+            top: 400px;
+
+            animation-name: animation-a;
+            animation-duration: 4s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-play-state: paused;
+        }
+
+        @keyframes animation-a {
+            0%{
+                background: red;
+                left: 100px;
+                top: 400px;
+            }
+            50%{
+                background: blue;
+                left: 800px;
+                top: 400px;
+            }
+            100%{
+                background: red;
+                left: 100px;
+                top: 400px;
+            }
+        }
+
+        #line-element {
+            transform: rotate(0deg);
+            transform-origin: 175px 175px;
+
+            animation-name: animation-b-line;
+            animation-duration: 3s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes animation-b-line {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Страница</h1>
+
+<div class="my-first-class my-first-class-animation" id="btn">Управление анимацией</div>
+
+<div class="my-second-class" id="box-moving-element"></div>
+
+<svg>
+    <g>
+        <line id="line-element" x1="150" y1="150" x2="200" y2="200" stroke="#0000FF" stroke-width="12"/>
+    </g>
+</svg>
+
+<script>
+    "use strict";
+
+    window.onload = function () {
+        let f = false;
+        document.getElementById("btn").onclick = function () {
+            f = !f;
+            if(f)
+                document.getElementById("box-moving-element").style["animation-play-state"] = "running";
+            else
+                document.getElementById("box-moving-element").style["animation-play-state"] = "paused";
+        };
+    };
+</script>
+
+</body>
+</html>
